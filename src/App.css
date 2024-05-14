@@ -94,6 +94,7 @@ header {
 input,
 textarea {
   border: none !important;
+  color: #FFFFFF !important;
 }
 input:focus,
 textarea:focus {
@@ -147,7 +148,7 @@ textarea:focus {
 }
 .double-hover::after,
 .double-hover::before{
-  transition: all 0.8s;
+  transition: all 0.4s;
 }
 /* 
 .double-hover::after{
@@ -185,19 +186,25 @@ textarea:focus {
 }
 
 .double-hover::before {
-  left: 0;
+  left: -3px;
   border-top-left-radius: 9px;
   border-bottom-left-radius: 9px;
 }
 
 .double-hover::after {
-  right: 0;
+  right: -4px;
   border-top-right-radius: 9px;
   border-bottom-right-radius: 9px;
 }
 .double-hover:hover::after,
 .double-hover:hover::before{
   width: 50%;
+}
+.double-hover:hover::after{
+  right: 0;
+}
+.double-hover:hover::before{
+  left: 0;
 }
 button{
   font-weight: bold !important;
